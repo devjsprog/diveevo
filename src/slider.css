@@ -1,10 +1,15 @@
 .slider-wrapper {
     max-width: 60em;
-    margin: 1em auto;
+    margin: em auto;
     margin-top: 0px;
     position: relative;
   }
-  
+
+  @media (max-width: 1000px) {
+    .slider-wrapper {
+      width: 300px !important;
+    }
+}
   input {
     display: none;
   }
@@ -59,7 +64,7 @@
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: #bbb;
+    background: white;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -147,8 +152,9 @@
   }
   
   #slide5:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide1:checked ~ .slider-prev-next-control label:nth-child(2)::after {
-    content: ">";
-    padding-left: 15px;
+    content: "→";
+    padding-left: 6px;
+    font-size: 29px;
   }
   
   #slide5:checked ~ .slider-prev-next-control label:nth-child(1), #slide4:checked ~ .slider-prev-next-control label:nth-child(5), #slide3:checked ~ .slider-prev-next-control label:nth-child(4), #slide2:checked ~ .slider-prev-next-control label:nth-child(3), #slide1:checked ~ .slider-prev-next-control label:nth-child(2) {
@@ -164,8 +170,9 @@
   }
   
   #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after, #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after {
-    content: "<";
-    padding-left: 8px;
+    content: "←";
+    padding-left: 6px;
+    font-size: 29px;
   }
   
   #slide5:checked ~ .slider-dot-control label:nth-child(5), #slide4:checked ~ .slider-dot-control label:nth-child(4), #slide3:checked ~ .slider-dot-control label:nth-child(3), #slide2:checked ~ .slider-dot-control label:nth-child(2), #slide1:checked ~ .slider-dot-control label:nth-child(1) {
