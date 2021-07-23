@@ -284,8 +284,8 @@ html {
         font-size: 30px;
         font-weight: 300;
         @media (max-width: 800px) {
-            padding: 50px 0;
-            font-size: 20px;
+            padding: 50px 15px;
+            font-size: 18px;
             padding-top: 10px;
         }
     }
@@ -303,13 +303,16 @@ html {
         @media (max-width: 1000px) {
             font-size: 30px;
             line-height: 30px;
+            padding-top: 0px;
+            padding-bottom: 20px;
         }
         @media (max-width: 800px) {
             font-size: 20px;
         }
         @media (max-width: 600px) {
             font-size: 15px;
-            padding: 20px;
+            // padding: 20px;
+
         }
     }
     .item-wra{
