@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/slider.css">
     <title>Document</title>
 </head>
 <body>
@@ -28,14 +29,68 @@
     </section>
     <section class="about" id="about">
         <div class="container">
-            <div class="section-title">Как самостоятельно посетить Дивеево</div>
+            <div class="section-title">Дивеевский монастырь</div>
             <div class="about__wrapper">
-                <div class="about__text">Этот сайт для тех, кто отчаялся в решении насущных бытовых проблем, кто ждет помощи в телесном и душевном исцелении уже не от врачей, а от Господа Бога. Для тех, кто надеется на помощь Батюшки Серафима Саровского. <br> <br> В такие минуты люди думают посетить Дивеевский монастырь, потому что  не понаслышке знают о реальной помощи Серафима Саровского: как после поездки в Дивеево исчезают болячки, как рождаются долгожданные малыши, как создаются новые семьи.</div>
+                <div class="about__text info-text">Этот сайт для тех, кто отчаялся в решении насущных бытовых проблем, кто ждет помощи в телесном и душевном исцелении уже не от врачей, а от Господа Бога. <br><br> Для тех, кто надеется на помощь Батюшки Серафима Саровского. <br> <br> В такие минуты люди думают посетить Дивеевский монастырь, потому что  не понаслышке знают о реальной помощи Серафима Саровского: как после поездки в Дивеево исчезают болячки, как рождаются долгожданные малыши, как создаются новые семьи.</div>
                 <div class="about__img">
-                    <img src="img/1.jpg" alt="" width="100%">
+                    <img src="img/2.jpg" alt="" >
                 </div>
             </div>
         </div>
     </section>
+    <section class="visit">
+        <div class="container">
+            <div class="section-title">Самостоятельное посещение</div>
+            <div class="visit__subtitle info-text">
+                    Преимущества самостоятельного посещения православных мест очевидны, ведь именно так Вы получите пользу и ощутите всю благодать четвертого удела Богородицы - в тишине и уединении. <br>
+                    К сожалению, сделать самостоятельно это не так просто, как кажется на на первый взгляд, 
+                    узнать все секреты Дивеева долго и хлопотно.  <br>
+                    Чтобы поездка прошла с максимальной пользой, нужно учесть очень много важных моментов. 
+                    Для решения этой проблемы вам понадобится опытный экскурсовод. 
+            </div>
+            <div class="section-title">Посещение с нами</div>
+            <div class="visit__wrapper">
+                <div class="visit__subtitle info-text">
+                    Мы поможем Вам получить максимальную пользу и выгоду от поездки. <br>
+                    Мы грамотно составим план Вашего пребывания на Дивеевской земле, чтобы  успеть посетить все значимые святыни. <br>
+                </div>
+                <div class="visit__slider slider-wrapper" style="width: 300px">
+                    <input checked type=radio name="slider" id="slide1" />
+                    <input type=radio name="slider" id="slide2" />
+                    <input type=radio name="slider" id="slide3" />
+                    <input type=radio name="slider" id="slide4" />
+                    <input type=radio name="slider" id="slide5" />
+                  
+                    <div class="slider-wrapper">
+                      <div class=inner>
+                        <article>
+                          <img src="img/1.jpg">
+                        </article>
+                        <article>
+                          <img src="img/3.jpg">
+                        </article>
+                        <article>
+                          <img src="img/4.jpg" >
+                        </article> 
+                      </div>
+                    </div>
+                  
+                    <div class="slider-prev-next-control">
+                      <label for=slide1></label>
+                      <label for=slide2></label>
+                      <label for=slide3></label>
+                    </div>
+                    <div class="slider-dot-control">
+                      <label for=slide1></label>
+                      <label for=slide2></label>
+                      <label for=slide3></label>
+                    </div>
+                </div>
+            </div>
+            <div class="visit__best">ЗАКАЖИТЕ САМЫЕ ЛУЧШИЕ ЭКСКУРСИИ ПО СВЯТЫМ ДИВЕЕВСКИМ МЕСТАМ</div>
+        </div>
+    </section>
+
+    
 </body>
 </html>
